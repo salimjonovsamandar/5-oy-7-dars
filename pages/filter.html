@@ -13,12 +13,19 @@
 <body>
   <div class="container-fluid ">
     <form class="form container mt-5">
-
+      <div class="row text-center  ">
+        <div class="input col-6">
+          <input style="margin-left: 200px;" class="form-control ml-2 mb-4  p-3" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="input col-6">
+          <button id="button" type="button" class="btn btn-outline-success p-3 w-25  ">Search</button>
+        </div>
+      </div>
       <div class="row">
         <div class="mb-3 col-6">
           <label for="color" class="form-label">Color</label>
           <select class="form-select " aria-label="Default select example" id="color">
-            <option selected>Select color</option>
+            <option selected value="">Select color</option>
             <option value="White">White</option>
             <option value="black">Black</option>
             <option value="red">Red</option>
@@ -30,7 +37,7 @@
         <div class="mb-3 col-6">
           <label for="Type" class="form-label">Type</label>
           <select class="form-select " aria-label="Default select example" id="type">
-            <option selected>Select type</option>
+            <option selected value="">Select type</option>
             <option value="iphone">Iphone</option>
             <option value="samsung">Samsung</option>
             <option value="redmi">Redmi</option>
@@ -42,22 +49,20 @@
       <div class="row container mx-auto ">
         <div class="mb-3  col-6">
           <label for="price" class="form-label">Min price</label>
-          <input type="number" class=" form-control " id="price" placeholder="Enter min price..." />
+          <input type="number" class=" form-control " id="min-price" placeholder="Enter min price..." />
         </div>
         <div class="mb-3 col-6">
           <label for="price" class="form-label">Max price </label>
-          <input type="number" class=" form-control " id="price" placeholder="Enter max price..." />
+          <input type="number" class=" form-control " id="max-price" placeholder="Enter max price..." />
         </div>
       </div>
+
       <button id="button" type="button" class="btn btn-outline-success w-25 my-4">Save</button>
 
       <a class="rounded nav-link w-25 p-2 bg-success text-light text-center  t-a-center " href="../index.html">Previous
         page</a>
-
     </form>
-
     <div id="product-list" class="main_card d-flex container flex-wrap justify-content-between mt-5  ">
-
     </div>
   </div>
   </div>
